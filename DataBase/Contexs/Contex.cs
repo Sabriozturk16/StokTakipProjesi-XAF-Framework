@@ -15,6 +15,10 @@ namespace DataBase.Contexs
             optionsBuilder.UseSqlServer("server=.;database=StokProjesi;trusted_connection=true;");
         }
         public DbSet<StokTedarikcisi> StokTedarik { get; set; }
-        public DbSet<Login> Login { get; set; }
+        public DbSet<Login> Logins { get; set; }
+        public DbSet<Birim> Birims { get; set; }
+        public DbSet<StokHareket> stokHarekets { get; set; }
+        public DbSet<StokKart> stokKarts { get; set; }
+        public DbSet<StokTedarikcisi> StokTedarikcisis { get; set; }
     }
 }

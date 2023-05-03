@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DataBase.Models
 {
-    public class StokHarekets
+    public class StokHareket
     {
+        [Key]
         public int OID { get; set; }
         public DateTime IslemTarihi { get; set; }
         public IslemTuru IslemTuru { get; set; }
