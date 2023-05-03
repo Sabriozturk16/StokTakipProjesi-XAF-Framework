@@ -8,7 +8,7 @@ namespace DataBase.Models
 {
     public class StokTedarikcisi
     {
-        public int Id { get; set; }
+        public int OID { get; set; }
         public string Kodu { get; set; }
         public string Adi { get; set; }
         public string Email { get; set; }

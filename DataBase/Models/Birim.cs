@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace DataBase.Models
 {
-    class Birim
+    public class Birim
     {
+        public int OID { get; set; }
+        public string Kodu { get; set; }
+        public string Adi { get; set; }
     }
 }
