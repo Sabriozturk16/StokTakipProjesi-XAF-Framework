@@ -33,16 +33,27 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.BonusSkins.v22.2" />
+    <Reference Include="DevExpress.CodeParser.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.Desktop.v22.2" />
     <Reference Include="DevExpress.Data.v22.2" />
+    <Reference Include="DevExpress.DataAccess.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v22.2.Core, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v22.2.Core, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v22.2" />
     <Reference Include="DevExpress.Sparkline.v22.2.Core" />
+    <Reference Include="DevExpress.Xpo.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraBars.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v22.2" />
     <Reference Include="DevExpress.Printing.v22.2.Core" />
     <Reference Include="DevExpress.Drawing.v22.2" />
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,6 +64,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Anasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anasayfa.Designer.cs">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </Compile>
     <Compile Include="DirectXForm1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,12 +78,41 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StokProjesiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StokProjesiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StokProjesiDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StokProjesiDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StokProjesiDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StokProjesiDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StokProjesiDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StokProjesiDataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="WaitForm1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="WaitForm1.Designer.cs">
       <DependentUpon>WaitForm1.cs</DependentUpon>
     </Compile>
+    <Compile Include="XtraForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraForm1.Designer.cs">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Anasayfa.resx">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DirectXForm1.resx">
       <DependentUpon>DirectXForm1.cs</DependentUpon>
     </EmbeddedResource>
@@ -79,9 +125,13 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="WaitForm1.resx">
       <DependentUpon>WaitForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraForm1.resx">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="Properties\Settings.settings">
@@ -93,6 +143,71 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="StokProjesiDataSet.xsc">
+      <DependentUpon>StokProjesiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StokProjesiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StokProjesiDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StokProjesiDataSet.xss">
+      <DependentUpon>StokProjesiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StokProjesiDataSet1.xsc">
+      <DependentUpon>StokProjesiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="StokProjesiDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StokProjesiDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StokProjesiDataSet1.xss">
+      <DependentUpon>StokProjesiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="StokProjesiDataSet2.xsc">
+      <DependentUpon>StokProjesiDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="StokProjesiDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StokProjesiDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StokProjesiDataSet2.xss">
+      <DependentUpon>StokProjesiDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="StokProjesiDataSet3.xsc">
+      <DependentUpon>StokProjesiDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="StokProjesiDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StokProjesiDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StokProjesiDataSet3.xss">
+      <DependentUpon>StokProjesiDataSet3.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iletisim-yazilim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1iy-logo-beyaz-zemin300x-20191004084234.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataBase\DataBase.csproj">
+      <Project>{2f5a64eb-ef30-497e-a42c-a3cd73e7f82e}</Project>
+      <Name>DataBase</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

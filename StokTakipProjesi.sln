@@ -4,10 +4,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.33214.272
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StokTakipProjesi", "StokTakipProjesi\StokTakipProjesi.csproj", "{92B3396C-4C93-4297-B1ED-26247514256B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2F5A64EB-EF30-497E-A42C-A3CD73E7F82E} = {2F5A64EB-EF30-497E-A42C-A3CD73E7F82E}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBase", "DataBase\DataBase.csproj", "{2F5A64EB-EF30-497E-A42C-A3CD73E7F82E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class", "Class\Class.csproj", "{A7E9319E-981B-4AD8-87C1-E30BE4E5F0CE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{92B3396C-4C93-4297-B1ED-26247514256B} = {92B3396C-4C93-4297-B1ED-26247514256B}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

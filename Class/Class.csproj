@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>a7e9319e-981b-4ad8-87c1-e30be4e5f0ce</ProjectGuid>
+    <ProjectGuid>{A7E9319E-981B-4AD8-87C1-E30BE4E5F0CE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Class</RootNamespace>
@@ -31,24 +31,30 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System"/>
-    
-    <Reference Include="System.Core"/>
-    <Reference Include="System.Xml.Linq"/>
-    <Reference Include="System.Data.DataSetExtensions"/>
-    
-    
-    <Reference Include="Microsoft.CSharp"/>
-    
-    <Reference Include="System.Data"/>
-    
-    <Reference Include="System.Net.Http"/>
-    
-    <Reference Include="System.Xml"/>
+    <Reference Include="DevExpress.Utils.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataBase\DataBase.csproj">
+      <Project>{2f5a64eb-ef30-497e-a42c-a3cd73e7f82e}</Project>
+      <Name>DataBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StokTakipProjesi\StokTakipProjesi.csproj">
+      <Project>{92b3396c-4c93-4297-b1ed-26247514256b}</Project>
+      <Name>StokTakipProjesi</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
- </Project>
+</Project>

@@ -18,7 +18,7 @@ namespace StokTakipProjesi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DirectXForm1());
+            Application.Run(new XtraForm1());
         }
     }
 }

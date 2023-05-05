@@ -9,6 +9,7 @@ namespace DataBase.Models
 {
     public class Login
     {
+        
         [Key]
         public int OID { get; set; }
         public string Username { get; set; }
