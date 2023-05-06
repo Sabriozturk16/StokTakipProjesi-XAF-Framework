@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -18,7 +19,29 @@ namespace StokTakipProjesi
             
             InitializeComponent();
         }
-        
+        SqlConnection baglanti = new SqlConnection("Data Source=ONUR;Initial Catalog=Mutakabat;Integrated Security=True");
+        public void Stok_Kart()
+        {
+            if (textEdit1.Text != "" && textEdit2.Text != "")
+            {
+                baglanti.Open();
+                string kayit = "insert into  (kullaniciad,firmaad,yetkili,il,ilce,vergidaire,vergino,mutabakatmail,telefon,adres,borc) values (@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9,@p10,@p11)";
+                SqlCommand ekle = new SqlCommand(kayit, baglanti);
+                ekle.Parameters.AddWithValue("@p1", textEdit1.Text);
+                ekle.Parameters.AddWithValue("@p2", textEdit2.Text);
+                ekle.ExecuteNonQuery();
+                baglanti.Close();
+                labelControl17.Visible = true;
+                labelControl17.ForeColor = Color.Green;
+                labelControl17.Text = "Stok Kart Başarıyla Kaydedildi";
+            }
+            else
+            {
+                labelControl17.Visible = true;
+                labelControl17.ForeColor = Color.Red;
+                labelControl17.Text = "'Stok Kodu' ve Stok Adı Boş Bırakılamaz";
+            }
+        }
         private void Anasayfa_Load(object sender, EventArgs e)
         {
             // TODO: Bu kod satırı 'stokProjesiDataSet3.stokHarekets' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
@@ -61,44 +84,50 @@ namespace StokTakipProjesi
 
         private void tabPane1_Click(object sender, EventArgs e)
         {
-            groupControl1.Enabled = true;
-            groupControl2.Enabled = false;
-            groupControl3.Enabled = false;
-            groupControl4.Enabled = false;
+           
 
         }
 
         private void tabNavigationPage1_Click(object sender, EventArgs e)
         {
-            groupControl1.Enabled = true;
-            groupControl2.Enabled = false;
-            groupControl3.Enabled = false;
-            groupControl4.Enabled = false;
+            
 
         }
 
         private void tabNavigationPage2_Click(object sender, EventArgs e)
         {
-            groupControl1.Enabled = false;
-            groupControl2.Enabled = true;
-            groupControl3.Enabled = false;
-            groupControl4.Enabled = false;
+            
         }
 
         private void tabNavigationPage3_Click(object sender, EventArgs e)
         {
-            groupControl1.Enabled = false;
-            groupControl2.Enabled = false;
-            groupControl3.Enabled = true;
-            groupControl4.Enabled = false;
+           
         }
 
         private void tabNavigationPage4_Click(object sender, EventArgs e)
         {
-            groupControl1.Enabled = false;
-            groupControl2.Enabled = false;
-            groupControl3.Enabled = false;
-            groupControl4.Enabled = true;
+           
+        }
+
+        private void tabNavigationPage1_MouseClick(object sender, MouseEventArgs e)
+        {
+            
+
+        }
+
+        private void tabNavigationPage1_DoubleClick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupControl1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            Stok_Kart();
         }
     }
 }

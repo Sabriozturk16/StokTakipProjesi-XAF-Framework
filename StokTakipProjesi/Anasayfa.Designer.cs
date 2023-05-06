@@ -38,117 +38,118 @@ namespace StokTakipProjesi
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tabPane1 = new DevExpress.XtraBars.Navigation.TabPane();
             this.tabNavigationPage1 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
-            this.tabNavigationPage2 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
-            this.tabNavigationPage3 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
-            this.tabNavigationPage4 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
-            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
-            this.stokProjesiDataSet = new StokTakipProjesi.StokProjesiDataSet();
-            this.stokKartsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.stokKartsTableAdapter = new StokTakipProjesi.StokProjesiDataSetTableAdapters.stokKartsTableAdapter();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.stokProjesiDataSet1 = new StokTakipProjesi.StokProjesiDataSet1();
-            this.birimsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.birimsTableAdapter = new StokTakipProjesi.StokProjesiDataSet1TableAdapters.BirimsTableAdapter();
-            this.oIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.koduDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.adiDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.stokProjesiDataSet2 = new StokTakipProjesi.StokProjesiDataSet2();
-            this.stokTedarikcisiBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.stokTedarikcisiTableAdapter = new StokTakipProjesi.StokProjesiDataSet2TableAdapters.StokTedarikcisiTableAdapter();
-            this.oIDDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.koduDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.adiDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telefonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.stokProjesiDataSet3 = new StokTakipProjesi.StokProjesiDataSet3();
-            this.stokHareketsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.stokHareketsTableAdapter = new StokTakipProjesi.StokProjesiDataSet3TableAdapters.stokHareketsTableAdapter();
-            this.oIDDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ıslemTarihiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ıslemTuruDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.miktarDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aciklamaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
-            this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
-            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit6 = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
-            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
-            this.textEdit7 = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit9 = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit10 = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
-            this.stokProjesiDataSet4 = new StokTakipProjesi.StokProjesiDataSet();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.oIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.koduDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.adiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kullanımDurumuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.stokKartsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.stokProjesiDataSet = new StokTakipProjesi.StokProjesiDataSet();
+            this.tabNavigationPage2 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.oIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.koduDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adiDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.birimsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.stokProjesiDataSet1 = new StokTakipProjesi.StokProjesiDataSet1();
+            this.tabNavigationPage3 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.oIDDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.koduDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adiDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.stokTedarikcisiBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.stokProjesiDataSet2 = new StokTakipProjesi.StokProjesiDataSet2();
+            this.tabNavigationPage4 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.oIDDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ıslemTarihiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ıslemTuruDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.miktarDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aciklamaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.stokHareketsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.stokProjesiDataSet3 = new StokTakipProjesi.StokProjesiDataSet3();
+            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.stokKartsTableAdapter = new StokTakipProjesi.StokProjesiDataSetTableAdapters.stokKartsTableAdapter();
+            this.birimsTableAdapter = new StokTakipProjesi.StokProjesiDataSet1TableAdapters.BirimsTableAdapter();
+            this.stokTedarikcisiTableAdapter = new StokTakipProjesi.StokProjesiDataSet2TableAdapters.StokTedarikcisiTableAdapter();
+            this.stokHareketsTableAdapter = new StokTakipProjesi.StokProjesiDataSet3TableAdapters.stokHareketsTableAdapter();
+            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+            this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
+            this.textEdit10 = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
+            this.textEdit9 = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit6 = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
+            this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.textEdit11 = new DevExpress.XtraEditors.TextEdit();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
+            this.textEdit7 = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
+            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
+            this.stokProjesiDataSet4 = new StokTakipProjesi.StokProjesiDataSet();
+            this.labelControl17 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).BeginInit();
             this.tabPane1.SuspendLayout();
             this.tabNavigationPage1.SuspendLayout();
-            this.tabNavigationPage2.SuspendLayout();
-            this.tabNavigationPage3.SuspendLayout();
-            this.tabNavigationPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.stokProjesiDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stokKartsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stokProjesiDataSet)).BeginInit();
+            this.tabNavigationPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stokProjesiDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.birimsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stokProjesiDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stokProjesiDataSet1)).BeginInit();
+            this.tabNavigationPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stokTedarikcisiBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stokProjesiDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stokProjesiDataSet2)).BeginInit();
+            this.tabNavigationPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stokHareketsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stokProjesiDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
             this.groupControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
-            this.groupControl3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
-            this.groupControl4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
+            this.groupControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stokProjesiDataSet4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).BeginInit();
+            this.groupControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stokProjesiDataSet4)).BeginInit();
             this.SuspendLayout();
             // 
             // labelControl1
@@ -223,6 +224,70 @@ namespace StokTakipProjesi
             this.tabNavigationPage1.PageText = "Stok Kart";
             this.tabNavigationPage1.Size = new System.Drawing.Size(898, 222);
             this.tabNavigationPage1.Click += new System.EventHandler(this.tabNavigationPage1_Click);
+            this.tabNavigationPage1.DoubleClick += new System.EventHandler(this.tabNavigationPage1_DoubleClick);
+            this.tabNavigationPage1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tabNavigationPage1_MouseClick);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.oIDDataGridViewTextBoxColumn,
+            this.koduDataGridViewTextBoxColumn,
+            this.adiDataGridViewTextBoxColumn,
+            this.kullanımDurumuDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.stokKartsBindingSource;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(898, 222);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // oIDDataGridViewTextBoxColumn
+            // 
+            this.oIDDataGridViewTextBoxColumn.DataPropertyName = "OID";
+            this.oIDDataGridViewTextBoxColumn.HeaderText = "OID";
+            this.oIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.oIDDataGridViewTextBoxColumn.Name = "oIDDataGridViewTextBoxColumn";
+            this.oIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.oIDDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // koduDataGridViewTextBoxColumn
+            // 
+            this.koduDataGridViewTextBoxColumn.DataPropertyName = "Kodu";
+            this.koduDataGridViewTextBoxColumn.HeaderText = "Kodu";
+            this.koduDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.koduDataGridViewTextBoxColumn.Name = "koduDataGridViewTextBoxColumn";
+            this.koduDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // adiDataGridViewTextBoxColumn
+            // 
+            this.adiDataGridViewTextBoxColumn.DataPropertyName = "Adi";
+            this.adiDataGridViewTextBoxColumn.HeaderText = "Adi";
+            this.adiDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.adiDataGridViewTextBoxColumn.Name = "adiDataGridViewTextBoxColumn";
+            this.adiDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // kullanımDurumuDataGridViewTextBoxColumn
+            // 
+            this.kullanımDurumuDataGridViewTextBoxColumn.DataPropertyName = "KullanımDurumu";
+            this.kullanımDurumuDataGridViewTextBoxColumn.HeaderText = "KullanımDurumu";
+            this.kullanımDurumuDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.kullanımDurumuDataGridViewTextBoxColumn.Name = "kullanımDurumuDataGridViewTextBoxColumn";
+            this.kullanımDurumuDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // stokKartsBindingSource
+            // 
+            this.stokKartsBindingSource.DataMember = "stokKarts";
+            this.stokKartsBindingSource.DataSource = this.stokProjesiDataSet;
+            // 
+            // stokProjesiDataSet
+            // 
+            this.stokProjesiDataSet.DataSetName = "StokProjesiDataSet";
+            this.stokProjesiDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tabNavigationPage2
             // 
@@ -232,42 +297,6 @@ namespace StokTakipProjesi
             this.tabNavigationPage2.PageText = "Birim";
             this.tabNavigationPage2.Size = new System.Drawing.Size(898, 222);
             this.tabNavigationPage2.Click += new System.EventHandler(this.tabNavigationPage2_Click);
-            // 
-            // tabNavigationPage3
-            // 
-            this.tabNavigationPage3.Caption = "tabNavigationPage3";
-            this.tabNavigationPage3.Controls.Add(this.dataGridView3);
-            this.tabNavigationPage3.Name = "tabNavigationPage3";
-            this.tabNavigationPage3.PageText = "Stok Tedarikçisi";
-            this.tabNavigationPage3.Size = new System.Drawing.Size(898, 222);
-            this.tabNavigationPage3.Click += new System.EventHandler(this.tabNavigationPage3_Click);
-            // 
-            // tabNavigationPage4
-            // 
-            this.tabNavigationPage4.Caption = "tabNavigationPage4";
-            this.tabNavigationPage4.Controls.Add(this.dataGridView4);
-            this.tabNavigationPage4.Name = "tabNavigationPage4";
-            this.tabNavigationPage4.PageText = "Stok Hareket";
-            this.tabNavigationPage4.Size = new System.Drawing.Size(898, 222);
-            this.tabNavigationPage4.Click += new System.EventHandler(this.tabNavigationPage4_Click);
-            // 
-            // sqlDataSource1
-            // 
-            this.sqlDataSource1.Name = "sqlDataSource1";
-            // 
-            // stokProjesiDataSet
-            // 
-            this.stokProjesiDataSet.DataSetName = "StokProjesiDataSet";
-            this.stokProjesiDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // stokKartsBindingSource
-            // 
-            this.stokKartsBindingSource.DataMember = "stokKarts";
-            this.stokKartsBindingSource.DataSource = this.stokProjesiDataSet;
-            // 
-            // stokKartsTableAdapter
-            // 
-            this.stokKartsTableAdapter.ClearBeforeFill = true;
             // 
             // dataGridView2
             // 
@@ -285,59 +314,6 @@ namespace StokTakipProjesi
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.Size = new System.Drawing.Size(892, 216);
             this.dataGridView2.TabIndex = 0;
-            // 
-            // dataGridView3
-            // 
-            this.dataGridView3.AutoGenerateColumns = false;
-            this.dataGridView3.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.oIDDataGridViewTextBoxColumn2,
-            this.koduDataGridViewTextBoxColumn2,
-            this.adiDataGridViewTextBoxColumn2,
-            this.emailDataGridViewTextBoxColumn,
-            this.telefonDataGridViewTextBoxColumn});
-            this.dataGridView3.DataSource = this.stokTedarikcisiBindingSource;
-            this.dataGridView3.GridColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.dataGridView3.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowHeadersWidth = 51;
-            this.dataGridView3.RowTemplate.Height = 24;
-            this.dataGridView3.Size = new System.Drawing.Size(892, 219);
-            this.dataGridView3.TabIndex = 0;
-            // 
-            // dataGridView4
-            // 
-            this.dataGridView4.AutoGenerateColumns = false;
-            this.dataGridView4.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.oIDDataGridViewTextBoxColumn3,
-            this.ıslemTarihiDataGridViewTextBoxColumn,
-            this.ıslemTuruDataGridViewTextBoxColumn,
-            this.miktarDataGridViewTextBoxColumn,
-            this.aciklamaDataGridViewTextBoxColumn});
-            this.dataGridView4.DataSource = this.stokHareketsBindingSource;
-            this.dataGridView4.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.RowHeadersWidth = 51;
-            this.dataGridView4.RowTemplate.Height = 24;
-            this.dataGridView4.Size = new System.Drawing.Size(892, 216);
-            this.dataGridView4.TabIndex = 0;
-            // 
-            // stokProjesiDataSet1
-            // 
-            this.stokProjesiDataSet1.DataSetName = "StokProjesiDataSet1";
-            this.stokProjesiDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // birimsBindingSource
-            // 
-            this.birimsBindingSource.DataMember = "Birims";
-            this.birimsBindingSource.DataSource = this.stokProjesiDataSet1;
-            // 
-            // birimsTableAdapter
-            // 
-            this.birimsTableAdapter.ClearBeforeFill = true;
             // 
             // oIDDataGridViewTextBoxColumn1
             // 
@@ -364,19 +340,44 @@ namespace StokTakipProjesi
             this.adiDataGridViewTextBoxColumn1.Name = "adiDataGridViewTextBoxColumn1";
             this.adiDataGridViewTextBoxColumn1.Width = 125;
             // 
-            // stokProjesiDataSet2
+            // birimsBindingSource
             // 
-            this.stokProjesiDataSet2.DataSetName = "StokProjesiDataSet2";
-            this.stokProjesiDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.birimsBindingSource.DataMember = "Birims";
+            this.birimsBindingSource.DataSource = this.stokProjesiDataSet1;
             // 
-            // stokTedarikcisiBindingSource
+            // stokProjesiDataSet1
             // 
-            this.stokTedarikcisiBindingSource.DataMember = "StokTedarikcisi";
-            this.stokTedarikcisiBindingSource.DataSource = this.stokProjesiDataSet2;
+            this.stokProjesiDataSet1.DataSetName = "StokProjesiDataSet1";
+            this.stokProjesiDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // stokTedarikcisiTableAdapter
+            // tabNavigationPage3
             // 
-            this.stokTedarikcisiTableAdapter.ClearBeforeFill = true;
+            this.tabNavigationPage3.Caption = "tabNavigationPage3";
+            this.tabNavigationPage3.Controls.Add(this.dataGridView3);
+            this.tabNavigationPage3.Name = "tabNavigationPage3";
+            this.tabNavigationPage3.PageText = "Stok Tedarikçisi";
+            this.tabNavigationPage3.Size = new System.Drawing.Size(898, 222);
+            this.tabNavigationPage3.Click += new System.EventHandler(this.tabNavigationPage3_Click);
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.AutoGenerateColumns = false;
+            this.dataGridView3.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.oIDDataGridViewTextBoxColumn2,
+            this.koduDataGridViewTextBoxColumn2,
+            this.adiDataGridViewTextBoxColumn2,
+            this.emailDataGridViewTextBoxColumn,
+            this.telefonDataGridViewTextBoxColumn});
+            this.dataGridView3.DataSource = this.stokTedarikcisiBindingSource;
+            this.dataGridView3.GridColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.dataGridView3.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.RowHeadersWidth = 51;
+            this.dataGridView3.RowTemplate.Height = 24;
+            this.dataGridView3.Size = new System.Drawing.Size(892, 219);
+            this.dataGridView3.TabIndex = 0;
             // 
             // oIDDataGridViewTextBoxColumn2
             // 
@@ -419,19 +420,43 @@ namespace StokTakipProjesi
             this.telefonDataGridViewTextBoxColumn.Name = "telefonDataGridViewTextBoxColumn";
             this.telefonDataGridViewTextBoxColumn.Width = 125;
             // 
-            // stokProjesiDataSet3
+            // stokTedarikcisiBindingSource
             // 
-            this.stokProjesiDataSet3.DataSetName = "StokProjesiDataSet3";
-            this.stokProjesiDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.stokTedarikcisiBindingSource.DataMember = "StokTedarikcisi";
+            this.stokTedarikcisiBindingSource.DataSource = this.stokProjesiDataSet2;
             // 
-            // stokHareketsBindingSource
+            // stokProjesiDataSet2
             // 
-            this.stokHareketsBindingSource.DataMember = "stokHarekets";
-            this.stokHareketsBindingSource.DataSource = this.stokProjesiDataSet3;
+            this.stokProjesiDataSet2.DataSetName = "StokProjesiDataSet2";
+            this.stokProjesiDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // stokHareketsTableAdapter
+            // tabNavigationPage4
             // 
-            this.stokHareketsTableAdapter.ClearBeforeFill = true;
+            this.tabNavigationPage4.Caption = "tabNavigationPage4";
+            this.tabNavigationPage4.Controls.Add(this.dataGridView4);
+            this.tabNavigationPage4.Name = "tabNavigationPage4";
+            this.tabNavigationPage4.PageText = "Stok Hareket";
+            this.tabNavigationPage4.Size = new System.Drawing.Size(898, 222);
+            this.tabNavigationPage4.Click += new System.EventHandler(this.tabNavigationPage4_Click);
+            // 
+            // dataGridView4
+            // 
+            this.dataGridView4.AutoGenerateColumns = false;
+            this.dataGridView4.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.oIDDataGridViewTextBoxColumn3,
+            this.ıslemTarihiDataGridViewTextBoxColumn,
+            this.ıslemTuruDataGridViewTextBoxColumn,
+            this.miktarDataGridViewTextBoxColumn,
+            this.aciklamaDataGridViewTextBoxColumn});
+            this.dataGridView4.DataSource = this.stokHareketsBindingSource;
+            this.dataGridView4.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.RowHeadersWidth = 51;
+            this.dataGridView4.RowTemplate.Height = 24;
+            this.dataGridView4.Size = new System.Drawing.Size(892, 216);
+            this.dataGridView4.TabIndex = 0;
             // 
             // oIDDataGridViewTextBoxColumn3
             // 
@@ -474,6 +499,36 @@ namespace StokTakipProjesi
             this.aciklamaDataGridViewTextBoxColumn.Name = "aciklamaDataGridViewTextBoxColumn";
             this.aciklamaDataGridViewTextBoxColumn.Width = 125;
             // 
+            // stokHareketsBindingSource
+            // 
+            this.stokHareketsBindingSource.DataMember = "stokHarekets";
+            this.stokHareketsBindingSource.DataSource = this.stokProjesiDataSet3;
+            // 
+            // stokProjesiDataSet3
+            // 
+            this.stokProjesiDataSet3.DataSetName = "StokProjesiDataSet3";
+            this.stokProjesiDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // sqlDataSource1
+            // 
+            this.sqlDataSource1.Name = "sqlDataSource1";
+            // 
+            // stokKartsTableAdapter
+            // 
+            this.stokKartsTableAdapter.ClearBeforeFill = true;
+            // 
+            // birimsTableAdapter
+            // 
+            this.birimsTableAdapter.ClearBeforeFill = true;
+            // 
+            // stokTedarikcisiTableAdapter
+            // 
+            this.stokTedarikcisiTableAdapter.ClearBeforeFill = true;
+            // 
+            // stokHareketsTableAdapter
+            // 
+            this.stokHareketsTableAdapter.ClearBeforeFill = true;
+            // 
             // groupControl1
             // 
             this.groupControl1.Controls.Add(this.simpleButton1);
@@ -484,121 +539,34 @@ namespace StokTakipProjesi
             this.groupControl1.Controls.Add(this.labelControl7);
             this.groupControl1.Controls.Add(this.labelControl6);
             this.groupControl1.Controls.Add(this.labelControl5);
-            this.groupControl1.Enabled = false;
             this.groupControl1.Location = new System.Drawing.Point(12, 252);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Size = new System.Drawing.Size(281, 262);
             this.groupControl1.TabIndex = 5;
             this.groupControl1.Text = "Stok Kart";
+            this.groupControl1.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl1_Paint);
             // 
-            // groupControl2
+            // simpleButton1
             // 
-            this.groupControl2.Controls.Add(this.simpleButton2);
-            this.groupControl2.Controls.Add(this.textEdit3);
-            this.groupControl2.Controls.Add(this.textEdit4);
-            this.groupControl2.Controls.Add(this.labelControl9);
-            this.groupControl2.Controls.Add(this.labelControl10);
-            this.groupControl2.Enabled = false;
-            this.groupControl2.Location = new System.Drawing.Point(304, 252);
-            this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(281, 262);
-            this.groupControl2.TabIndex = 6;
-            this.groupControl2.Text = "Birim";
-            this.groupControl2.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl2_Paint);
+            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.simpleButton1.Location = new System.Drawing.Point(152, 213);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(124, 44);
+            this.simpleButton1.TabIndex = 16;
+            this.simpleButton1.Text = "Kaydet";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
-            // groupControl3
+            // radioButton2
             // 
-            this.groupControl3.Controls.Add(this.simpleButton3);
-            this.groupControl3.Controls.Add(this.textEdit10);
-            this.groupControl3.Controls.Add(this.labelControl11);
-            this.groupControl3.Controls.Add(this.textEdit9);
-            this.groupControl3.Controls.Add(this.labelControl8);
-            this.groupControl3.Controls.Add(this.textEdit5);
-            this.groupControl3.Controls.Add(this.textEdit6);
-            this.groupControl3.Controls.Add(this.labelControl12);
-            this.groupControl3.Controls.Add(this.labelControl13);
-            this.groupControl3.Enabled = false;
-            this.groupControl3.Location = new System.Drawing.Point(591, 252);
-            this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(281, 262);
-            this.groupControl3.TabIndex = 7;
-            this.groupControl3.Text = "Tedarikçi";
-            // 
-            // groupControl4
-            // 
-            this.groupControl4.Controls.Add(this.radioButton4);
-            this.groupControl4.Controls.Add(this.radioButton3);
-            this.groupControl4.Controls.Add(this.textEdit11);
-            this.groupControl4.Controls.Add(this.labelControl14);
-            this.groupControl4.Controls.Add(this.simpleButton4);
-            this.groupControl4.Controls.Add(this.textEdit7);
-            this.groupControl4.Controls.Add(this.labelControl15);
-            this.groupControl4.Controls.Add(this.labelControl16);
-            this.groupControl4.Enabled = false;
-            this.groupControl4.Location = new System.Drawing.Point(878, 252);
-            this.groupControl4.Name = "groupControl4";
-            this.groupControl4.Size = new System.Drawing.Size(281, 262);
-            this.groupControl4.TabIndex = 8;
-            this.groupControl4.Text = "Stok Hareket";
-            // 
-            // pictureEdit1
-            // 
-            this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
-            this.pictureEdit1.Location = new System.Drawing.Point(1073, 516);
-            this.pictureEdit1.Name = "pictureEdit1";
-            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit1.Size = new System.Drawing.Size(72, 39);
-            this.pictureEdit1.TabIndex = 9;
-            this.pictureEdit1.EditValueChanged += new System.EventHandler(this.pictureEdit1_EditValueChanged);
-            this.pictureEdit1.Click += new System.EventHandler(this.pictureEdit1_Click);
-            // 
-            // labelControl5
-            // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(17, 42);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(58, 25);
-            this.labelControl5.TabIndex = 0;
-            this.labelControl5.Text = "Kodu :";
-            // 
-            // labelControl6
-            // 
-            this.labelControl6.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Location = new System.Drawing.Point(17, 92);
-            this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(40, 25);
-            this.labelControl6.TabIndex = 1;
-            this.labelControl6.Text = "Adı :";
-            // 
-            // labelControl7
-            // 
-            this.labelControl7.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Location = new System.Drawing.Point(5, 148);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(155, 25);
-            this.labelControl7.TabIndex = 2;
-            this.labelControl7.Text = "Kullanım Durumu:";
-            // 
-            // textEdit1
-            // 
-            this.textEdit1.Location = new System.Drawing.Point(92, 39);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.textEdit1.Size = new System.Drawing.Size(153, 32);
-            this.textEdit1.TabIndex = 3;
-            // 
-            // textEdit2
-            // 
-            this.textEdit2.Location = new System.Drawing.Point(92, 89);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textEdit2.Properties.Appearance.Options.UseFont = true;
-            this.textEdit2.Size = new System.Drawing.Size(153, 32);
-            this.textEdit2.TabIndex = 4;
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.radioButton2.Location = new System.Drawing.Point(174, 162);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(76, 29);
+            this.radioButton2.TabIndex = 6;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Pasif";
+            this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // radioButton1
             // 
@@ -613,17 +581,76 @@ namespace StokTakipProjesi
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
-            // radioButton2
+            // textEdit2
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButton2.Location = new System.Drawing.Point(174, 162);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(76, 29);
-            this.radioButton2.TabIndex = 6;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Pasif";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.textEdit2.Location = new System.Drawing.Point(92, 89);
+            this.textEdit2.Name = "textEdit2";
+            this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textEdit2.Properties.Appearance.Options.UseFont = true;
+            this.textEdit2.Size = new System.Drawing.Size(153, 32);
+            this.textEdit2.TabIndex = 4;
+            // 
+            // textEdit1
+            // 
+            this.textEdit1.Location = new System.Drawing.Point(92, 39);
+            this.textEdit1.Name = "textEdit1";
+            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textEdit1.Properties.Appearance.Options.UseFont = true;
+            this.textEdit1.Size = new System.Drawing.Size(153, 32);
+            this.textEdit1.TabIndex = 3;
+            // 
+            // labelControl7
+            // 
+            this.labelControl7.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl7.Appearance.Options.UseFont = true;
+            this.labelControl7.Location = new System.Drawing.Point(5, 148);
+            this.labelControl7.Name = "labelControl7";
+            this.labelControl7.Size = new System.Drawing.Size(155, 25);
+            this.labelControl7.TabIndex = 2;
+            this.labelControl7.Text = "Kullanım Durumu:";
+            // 
+            // labelControl6
+            // 
+            this.labelControl6.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl6.Appearance.Options.UseFont = true;
+            this.labelControl6.Location = new System.Drawing.Point(17, 92);
+            this.labelControl6.Name = "labelControl6";
+            this.labelControl6.Size = new System.Drawing.Size(40, 25);
+            this.labelControl6.TabIndex = 1;
+            this.labelControl6.Text = "Adı :";
+            // 
+            // labelControl5
+            // 
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl5.Appearance.Options.UseFont = true;
+            this.labelControl5.Location = new System.Drawing.Point(17, 42);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(58, 25);
+            this.labelControl5.TabIndex = 0;
+            this.labelControl5.Text = "Kodu :";
+            // 
+            // groupControl2
+            // 
+            this.groupControl2.Controls.Add(this.simpleButton2);
+            this.groupControl2.Controls.Add(this.textEdit3);
+            this.groupControl2.Controls.Add(this.textEdit4);
+            this.groupControl2.Controls.Add(this.labelControl9);
+            this.groupControl2.Controls.Add(this.labelControl10);
+            this.groupControl2.Location = new System.Drawing.Point(304, 252);
+            this.groupControl2.Name = "groupControl2";
+            this.groupControl2.Size = new System.Drawing.Size(281, 262);
+            this.groupControl2.TabIndex = 6;
+            this.groupControl2.Text = "Birim";
+            this.groupControl2.Paint += new System.Windows.Forms.PaintEventHandler(this.groupControl2_Paint);
+            // 
+            // simpleButton2
+            // 
+            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.simpleButton2.Location = new System.Drawing.Point(152, 213);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(124, 44);
+            this.simpleButton2.TabIndex = 16;
+            this.simpleButton2.Text = "Kaydet";
             // 
             // textEdit3
             // 
@@ -663,6 +690,70 @@ namespace StokTakipProjesi
             this.labelControl10.TabIndex = 8;
             this.labelControl10.Text = "Kodu :";
             // 
+            // groupControl3
+            // 
+            this.groupControl3.Controls.Add(this.simpleButton3);
+            this.groupControl3.Controls.Add(this.textEdit10);
+            this.groupControl3.Controls.Add(this.labelControl11);
+            this.groupControl3.Controls.Add(this.textEdit9);
+            this.groupControl3.Controls.Add(this.labelControl8);
+            this.groupControl3.Controls.Add(this.textEdit5);
+            this.groupControl3.Controls.Add(this.textEdit6);
+            this.groupControl3.Controls.Add(this.labelControl12);
+            this.groupControl3.Controls.Add(this.labelControl13);
+            this.groupControl3.Location = new System.Drawing.Point(591, 252);
+            this.groupControl3.Name = "groupControl3";
+            this.groupControl3.Size = new System.Drawing.Size(281, 262);
+            this.groupControl3.TabIndex = 7;
+            this.groupControl3.Text = "Tedarikçi";
+            // 
+            // simpleButton3
+            // 
+            this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
+            this.simpleButton3.Location = new System.Drawing.Point(152, 213);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.Size = new System.Drawing.Size(124, 44);
+            this.simpleButton3.TabIndex = 20;
+            this.simpleButton3.Text = "Kaydet";
+            // 
+            // textEdit10
+            // 
+            this.textEdit10.Location = new System.Drawing.Point(87, 159);
+            this.textEdit10.Name = "textEdit10";
+            this.textEdit10.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textEdit10.Properties.Appearance.Options.UseFont = true;
+            this.textEdit10.Size = new System.Drawing.Size(189, 32);
+            this.textEdit10.TabIndex = 19;
+            // 
+            // labelControl11
+            // 
+            this.labelControl11.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl11.Appearance.Options.UseFont = true;
+            this.labelControl11.Location = new System.Drawing.Point(9, 166);
+            this.labelControl11.Name = "labelControl11";
+            this.labelControl11.Size = new System.Drawing.Size(72, 25);
+            this.labelControl11.TabIndex = 18;
+            this.labelControl11.Text = "Telefon:";
+            // 
+            // textEdit9
+            // 
+            this.textEdit9.Location = new System.Drawing.Point(87, 112);
+            this.textEdit9.Name = "textEdit9";
+            this.textEdit9.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textEdit9.Properties.Appearance.Options.UseFont = true;
+            this.textEdit9.Size = new System.Drawing.Size(189, 32);
+            this.textEdit9.TabIndex = 17;
+            // 
+            // labelControl8
+            // 
+            this.labelControl8.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl8.Appearance.Options.UseFont = true;
+            this.labelControl8.Location = new System.Drawing.Point(5, 117);
+            this.labelControl8.Name = "labelControl8";
+            this.labelControl8.Size = new System.Drawing.Size(62, 25);
+            this.labelControl8.TabIndex = 16;
+            this.labelControl8.Text = "E-Mail:";
+            // 
             // textEdit5
             // 
             this.textEdit5.Location = new System.Drawing.Point(87, 73);
@@ -700,6 +791,65 @@ namespace StokTakipProjesi
             this.labelControl13.Size = new System.Drawing.Size(58, 25);
             this.labelControl13.TabIndex = 8;
             this.labelControl13.Text = "Kodu :";
+            // 
+            // groupControl4
+            // 
+            this.groupControl4.Controls.Add(this.radioButton4);
+            this.groupControl4.Controls.Add(this.radioButton3);
+            this.groupControl4.Controls.Add(this.textEdit11);
+            this.groupControl4.Controls.Add(this.labelControl14);
+            this.groupControl4.Controls.Add(this.simpleButton4);
+            this.groupControl4.Controls.Add(this.textEdit7);
+            this.groupControl4.Controls.Add(this.labelControl15);
+            this.groupControl4.Controls.Add(this.labelControl16);
+            this.groupControl4.Location = new System.Drawing.Point(878, 252);
+            this.groupControl4.Name = "groupControl4";
+            this.groupControl4.Size = new System.Drawing.Size(281, 262);
+            this.groupControl4.TabIndex = 8;
+            this.groupControl4.Text = "Stok Hareket";
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.radioButton4.Location = new System.Drawing.Point(192, 42);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(76, 29);
+            this.radioButton4.TabIndex = 19;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "Çıkış";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.radioButton3.Location = new System.Drawing.Point(114, 42);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(72, 29);
+            this.radioButton3.TabIndex = 18;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Giriş";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // textEdit11
+            // 
+            this.textEdit11.Location = new System.Drawing.Point(115, 141);
+            this.textEdit11.Name = "textEdit11";
+            this.textEdit11.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textEdit11.Properties.Appearance.Options.UseFont = true;
+            this.textEdit11.Size = new System.Drawing.Size(153, 32);
+            this.textEdit11.TabIndex = 17;
+            // 
+            // labelControl14
+            // 
+            this.labelControl14.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl14.Appearance.Options.UseFont = true;
+            this.labelControl14.Location = new System.Drawing.Point(17, 148);
+            this.labelControl14.Name = "labelControl14";
+            this.labelControl14.Size = new System.Drawing.Size(91, 25);
+            this.labelControl14.TabIndex = 16;
+            this.labelControl14.Text = "Açıklama :";
             // 
             // simpleButton4
             // 
@@ -739,175 +889,35 @@ namespace StokTakipProjesi
             this.labelControl16.TabIndex = 8;
             this.labelControl16.Text = "İşlem Türü :";
             // 
-            // textEdit9
+            // pictureEdit1
             // 
-            this.textEdit9.Location = new System.Drawing.Point(87, 112);
-            this.textEdit9.Name = "textEdit9";
-            this.textEdit9.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textEdit9.Properties.Appearance.Options.UseFont = true;
-            this.textEdit9.Size = new System.Drawing.Size(189, 32);
-            this.textEdit9.TabIndex = 17;
-            // 
-            // labelControl8
-            // 
-            this.labelControl8.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Location = new System.Drawing.Point(5, 117);
-            this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(62, 25);
-            this.labelControl8.TabIndex = 16;
-            this.labelControl8.Text = "E-Mail:";
-            // 
-            // textEdit10
-            // 
-            this.textEdit10.Location = new System.Drawing.Point(87, 159);
-            this.textEdit10.Name = "textEdit10";
-            this.textEdit10.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textEdit10.Properties.Appearance.Options.UseFont = true;
-            this.textEdit10.Size = new System.Drawing.Size(189, 32);
-            this.textEdit10.TabIndex = 19;
-            // 
-            // labelControl11
-            // 
-            this.labelControl11.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl11.Appearance.Options.UseFont = true;
-            this.labelControl11.Location = new System.Drawing.Point(9, 166);
-            this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(72, 25);
-            this.labelControl11.TabIndex = 18;
-            this.labelControl11.Text = "Telefon:";
+            this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
+            this.pictureEdit1.Location = new System.Drawing.Point(1073, 516);
+            this.pictureEdit1.Name = "pictureEdit1";
+            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pictureEdit1.Size = new System.Drawing.Size(72, 39);
+            this.pictureEdit1.TabIndex = 9;
+            this.pictureEdit1.EditValueChanged += new System.EventHandler(this.pictureEdit1_EditValueChanged);
+            this.pictureEdit1.Click += new System.EventHandler(this.pictureEdit1_Click);
             // 
             // stokProjesiDataSet4
             // 
             this.stokProjesiDataSet4.DataSetName = "StokProjesiDataSet";
             this.stokProjesiDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // dataGridView1
+            // labelControl17
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.oIDDataGridViewTextBoxColumn,
-            this.koduDataGridViewTextBoxColumn,
-            this.adiDataGridViewTextBoxColumn,
-            this.kullanımDurumuDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.stokKartsBindingSource;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(898, 222);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // oIDDataGridViewTextBoxColumn
-            // 
-            this.oIDDataGridViewTextBoxColumn.DataPropertyName = "OID";
-            this.oIDDataGridViewTextBoxColumn.HeaderText = "OID";
-            this.oIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.oIDDataGridViewTextBoxColumn.Name = "oIDDataGridViewTextBoxColumn";
-            this.oIDDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // koduDataGridViewTextBoxColumn
-            // 
-            this.koduDataGridViewTextBoxColumn.DataPropertyName = "Kodu";
-            this.koduDataGridViewTextBoxColumn.HeaderText = "Kodu";
-            this.koduDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.koduDataGridViewTextBoxColumn.Name = "koduDataGridViewTextBoxColumn";
-            this.koduDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // adiDataGridViewTextBoxColumn
-            // 
-            this.adiDataGridViewTextBoxColumn.DataPropertyName = "Adi";
-            this.adiDataGridViewTextBoxColumn.HeaderText = "Adi";
-            this.adiDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.adiDataGridViewTextBoxColumn.Name = "adiDataGridViewTextBoxColumn";
-            this.adiDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // kullanımDurumuDataGridViewTextBoxColumn
-            // 
-            this.kullanımDurumuDataGridViewTextBoxColumn.DataPropertyName = "KullanımDurumu";
-            this.kullanımDurumuDataGridViewTextBoxColumn.HeaderText = "KullanımDurumu";
-            this.kullanımDurumuDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.kullanımDurumuDataGridViewTextBoxColumn.Name = "kullanımDurumuDataGridViewTextBoxColumn";
-            this.kullanımDurumuDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // textEdit11
-            // 
-            this.textEdit11.Location = new System.Drawing.Point(115, 141);
-            this.textEdit11.Name = "textEdit11";
-            this.textEdit11.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textEdit11.Properties.Appearance.Options.UseFont = true;
-            this.textEdit11.Size = new System.Drawing.Size(153, 32);
-            this.textEdit11.TabIndex = 17;
-            // 
-            // labelControl14
-            // 
-            this.labelControl14.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl14.Appearance.Options.UseFont = true;
-            this.labelControl14.Location = new System.Drawing.Point(17, 148);
-            this.labelControl14.Name = "labelControl14";
-            this.labelControl14.Size = new System.Drawing.Size(91, 25);
-            this.labelControl14.TabIndex = 16;
-            this.labelControl14.Text = "Açıklama :";
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButton3.Location = new System.Drawing.Point(114, 42);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(72, 29);
-            this.radioButton3.TabIndex = 18;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Giriş";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.radioButton4.Location = new System.Drawing.Point(192, 42);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(76, 29);
-            this.radioButton4.TabIndex = 19;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Çıkış";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            // 
-            // simpleButton1
-            // 
-            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(152, 213);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(124, 44);
-            this.simpleButton1.TabIndex = 16;
-            this.simpleButton1.Text = "Kaydet";
-            // 
-            // simpleButton2
-            // 
-            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
-            this.simpleButton2.Location = new System.Drawing.Point(152, 213);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(124, 44);
-            this.simpleButton2.TabIndex = 16;
-            this.simpleButton2.Text = "Kaydet";
-            // 
-            // simpleButton3
-            // 
-            this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
-            this.simpleButton3.Location = new System.Drawing.Point(152, 213);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(124, 44);
-            this.simpleButton3.TabIndex = 20;
-            this.simpleButton3.Text = "Kaydet";
+            this.labelControl17.Location = new System.Drawing.Point(524, 522);
+            this.labelControl17.Name = "labelControl17";
+            this.labelControl17.Size = new System.Drawing.Size(0, 16);
+            this.labelControl17.TabIndex = 10;
             // 
             // Anasayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1157, 555);
+            this.ClientSize = new System.Drawing.Size(1157, 562);
+            this.Controls.Add(this.labelControl17);
             this.Controls.Add(this.pictureEdit1);
             this.Controls.Add(this.groupControl4);
             this.Controls.Add(this.groupControl3);
@@ -924,45 +934,45 @@ namespace StokTakipProjesi
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).EndInit();
             this.tabPane1.ResumeLayout(false);
             this.tabNavigationPage1.ResumeLayout(false);
-            this.tabNavigationPage2.ResumeLayout(false);
-            this.tabNavigationPage3.ResumeLayout(false);
-            this.tabNavigationPage4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.stokProjesiDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stokKartsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stokProjesiDataSet)).EndInit();
+            this.tabNavigationPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stokProjesiDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.birimsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stokProjesiDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stokProjesiDataSet1)).EndInit();
+            this.tabNavigationPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stokTedarikcisiBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stokProjesiDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stokProjesiDataSet2)).EndInit();
+            this.tabNavigationPage4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stokHareketsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stokProjesiDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
             this.groupControl2.ResumeLayout(false);
             this.groupControl2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
             this.groupControl3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl4)).EndInit();
             this.groupControl4.ResumeLayout(false);
             this.groupControl4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stokProjesiDataSet4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.stokProjesiDataSet4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1049,5 +1059,6 @@ namespace StokTakipProjesi
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
         private DevExpress.XtraEditors.SimpleButton simpleButton3;
+        private DevExpress.XtraEditors.LabelControl labelControl17;
     }
 }

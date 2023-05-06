@@ -15,6 +15,7 @@ namespace DataBase.Models
         public IslemTuru IslemTuru { get; set; }
         public double Miktar { get; set; }
         public string Aciklama { get; set; }
+        public int? StokKartId { get; set; }
     }
 
     public enum IslemTuru
