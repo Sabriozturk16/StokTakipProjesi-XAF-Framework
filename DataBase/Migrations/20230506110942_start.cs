@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace DataBase.Migrations
 {
-    public partial class initialcreate : Migration
+    public partial class start : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -44,7 +44,8 @@ namespace DataBase.Migrations
                     Kodu = table.Column<string>(nullable: true),
                     Adi = table.Column<string>(nullable: true),
                     BirimOID = table.Column<int>(nullable: true),
-                    KullanımDurumu = table.Column<int>(nullable: false)
+                    KullanımDurumu = table.Column<int>(nullable: false),
+                    Miktar = table.Column<double>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -67,14 +68,14 @@ namespace DataBase.Migrations
                     IslemTuru = table.Column<int>(nullable: false),
                     Miktar = table.Column<double>(nullable: false),
                     Aciklama = table.Column<string>(nullable: true),
-                    StokKartOID = table.Column<int>(nullable: true)
+                    StokKartId = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_stokHarekets", x => x.OID);
                     table.ForeignKey(
-                        name: "FK_stokHarekets_stokKarts_StokKartOID",
-                        column: x => x.StokKartOID,
+                        name: "FK_stokHarekets_stokKarts_StokKartId",
+                        column: x => x.StokKartId,
                         principalTable: "stokKarts",
                         principalColumn: "OID",
                         onDelete: ReferentialAction.Restrict);
@@ -90,23 +91,23 @@ namespace DataBase.Migrations
                     Adi = table.Column<string>(nullable: true),
                     Email = table.Column<string>(nullable: true),
                     Telefon = table.Column<string>(nullable: true),
-                    StokKartOID = table.Column<int>(nullable: true)
+                    StokKartId = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_StokTedarikcisi", x => x.OID);
                     table.ForeignKey(
-                        name: "FK_StokTedarikcisi_stokKarts_StokKartOID",
-                        column: x => x.StokKartOID,
+                        name: "FK_StokTedarikcisi_stokKarts_StokKartId",
+                        column: x => x.StokKartId,
                         principalTable: "stokKarts",
                         principalColumn: "OID",
                         onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_stokHarekets_StokKartOID",
+                name: "IX_stokHarekets_StokKartId",
                 table: "stokHarekets",
-                column: "StokKartOID");
+                column: "StokKartId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_stokKarts_BirimOID",
@@ -114,9 +115,9 @@ namespace DataBase.Migrations
                 column: "BirimOID");
 
             migrationBuilder.CreateIndex(
-                name: "IX_StokTedarikcisi_StokKartOID",
+                name: "IX_StokTedarikcisi_StokKartId",
                 table: "StokTedarikcisi",
-                column: "StokKartOID");
+                column: "StokKartId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

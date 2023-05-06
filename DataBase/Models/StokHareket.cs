@@ -4,6 +4,8 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+
 
 namespace DataBase.Models
 {
@@ -11,10 +13,19 @@ namespace DataBase.Models
     {
         [Key]
         public int OID { get; set; }
+        [Required]
         public DateTime IslemTarihi { get; set; }
+        [Required]
+
         public IslemTuru IslemTuru { get; set; }
+        [Required]
+
         public double Miktar { get; set; }
+        [Required]
+
         public string Aciklama { get; set; }
+        [Required]
+
         public int? StokKartId { get; set; }
     }
 

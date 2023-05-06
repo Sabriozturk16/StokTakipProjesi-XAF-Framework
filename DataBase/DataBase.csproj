@@ -181,11 +181,16 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Contexs\Contex.cs" />
-    <Compile Include="Migrations\20230503151834_initial-create.cs" />
-    <Compile Include="Migrations\20230503151834_initial-create.designer.cs">
-      <DependentUpon>20230503151834_initial-create.cs</DependentUpon>
+    <Compile Include="Migrations\20230506110942_start.cs" />
+    <Compile Include="Migrations\20230506110942_start.designer.cs">
+      <DependentUpon>20230506110942_start.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\ContexModelSnapshot.cs" />
+    <Compile Include="ModelsEN\Login1.cs" />
+    <Compile Include="ModelsEN\StockCard.cs" />
+    <Compile Include="ModelsEN\StockMove.cs" />
+    <Compile Include="ModelsEN\StockSup.cs" />
+    <Compile Include="ModelsEN\Unit.cs" />
     <Compile Include="Models\Birim.cs" />
     <Compile Include="Models\deneme.cs" />
     <Compile Include="Models\Login.cs" />

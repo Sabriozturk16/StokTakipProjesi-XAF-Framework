@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataBase.Migrations
 {
     [DbContext(typeof(Contex))]
-    [Migration("20230503151834_initial-create")]
-    partial class initialcreate
+    [Migration("20230506110942_start")]
+    partial class start
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -76,12 +76,12 @@ namespace DataBase.Migrations
                     b.Property<double>("Miktar")
                         .HasColumnType("float");
 
-                    b.Property<int?>("StokKartOID")
+                    b.Property<int?>("StokKartId")
                         .HasColumnType("int");
 
                     b.HasKey("OID");
 
-                    b.HasIndex("StokKartOID");
+                    b.HasIndex("StokKartId");
 
                     b.ToTable("stokHarekets");
                 });
@@ -104,6 +104,9 @@ namespace DataBase.Migrations
 
                     b.Property<int>("KullanımDurumu")
                         .HasColumnType("int");
+
+                    b.Property<double>("Miktar")
+                        .HasColumnType("float");
 
                     b.HasKey("OID");
 
@@ -128,7 +131,7 @@ namespace DataBase.Migrations
                     b.Property<string>("Kodu")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("StokKartOID")
+                    b.Property<int?>("StokKartId")
                         .HasColumnType("int");
 
                     b.Property<string>("Telefon")
@@ -136,7 +139,7 @@ namespace DataBase.Migrations
 
                     b.HasKey("OID");
 
-                    b.HasIndex("StokKartOID");
+                    b.HasIndex("StokKartId");
 
                     b.ToTable("StokTedarikcisi");
                 });
@@ -145,7 +148,7 @@ namespace DataBase.Migrations
                 {
                     b.HasOne("DataBase.Models.StokKart", null)
                         .WithMany("StokHarekets")
-                        .HasForeignKey("StokKartOID");
+                        .HasForeignKey("StokKartId");
                 });
 
             modelBuilder.Entity("DataBase.Models.StokKart", b =>
@@ -157,9 +160,9 @@ namespace DataBase.Migrations
 
             modelBuilder.Entity("DataBase.Models.StokTedarikcisi", b =>
                 {
-                    b.HasOne("DataBase.Models.StokKart", null)
+                    b.HasOne("DataBase.Models.StokKart", "StokKart")
                         .WithMany("Tedarikçiler")
-                        .HasForeignKey("StokKartOID");
+                        .HasForeignKey("StokKartId");
                 });
 #pragma warning restore 612, 618
         }
