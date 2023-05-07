@@ -11,7 +11,7 @@ namespace DataBase.Models
     {
         private Birim birim;
         [Key]
-        public int OID { get; set; }
+        public int? StokKartId { get; set; }
         public string Kodu { get; set; }
         public string Adi { get; set; }
         public Birim Birim { get => birim; set => birim = value; }

@@ -10,13 +10,12 @@ namespace DataBase.Models
     public class StokTedarikcisi
     {
         [Key]
-        public int OID { get; set; }
+        public int? StokKartId { get; set; }
         public string Kodu { get; set; }
         public string Adi { get; set; }
         public string Email { get; set; }
         public string Telefon { get; set; }
-
-        public int? StokKartId { get; set; }
+     
         public virtual StokKart StokKart { get; set; }
     }
 }

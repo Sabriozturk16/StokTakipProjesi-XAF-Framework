@@ -38,36 +38,15 @@ namespace StokTakipProjesi
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tabPane1 = new DevExpress.XtraBars.Navigation.TabPane();
             this.tabNavigationPage1 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.oIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.koduDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.adiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.kullanımDurumuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stokKartsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.stokProjesiDataSet = new StokTakipProjesi.StokProjesiDataSet();
             this.tabNavigationPage2 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.oIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.koduDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.adiDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.birimsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.stokProjesiDataSet1 = new StokTakipProjesi.StokProjesiDataSet1();
             this.tabNavigationPage3 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.oIDDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.koduDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.adiDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telefonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stokTedarikcisiBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.stokProjesiDataSet2 = new StokTakipProjesi.StokProjesiDataSet2();
             this.tabNavigationPage4 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.oIDDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ıslemTarihiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ıslemTuruDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.miktarDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.aciklamaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.stokHareketsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.stokProjesiDataSet3 = new StokTakipProjesi.StokProjesiDataSet3();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
@@ -114,20 +93,12 @@ namespace StokTakipProjesi
             this.labelControl17 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).BeginInit();
             this.tabPane1.SuspendLayout();
-            this.tabNavigationPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stokKartsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stokProjesiDataSet)).BeginInit();
-            this.tabNavigationPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.birimsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stokProjesiDataSet1)).BeginInit();
-            this.tabNavigationPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stokTedarikcisiBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stokProjesiDataSet2)).BeginInit();
-            this.tabNavigationPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stokHareketsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stokProjesiDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
@@ -218,7 +189,6 @@ namespace StokTakipProjesi
             // tabNavigationPage1
             // 
             this.tabNavigationPage1.Caption = "tabNavigationPage1";
-            this.tabNavigationPage1.Controls.Add(this.dataGridView1);
             this.tabNavigationPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.tabNavigationPage1.Name = "tabNavigationPage1";
             this.tabNavigationPage1.PageText = "Stok Kart";
@@ -226,58 +196,6 @@ namespace StokTakipProjesi
             this.tabNavigationPage1.Click += new System.EventHandler(this.tabNavigationPage1_Click);
             this.tabNavigationPage1.DoubleClick += new System.EventHandler(this.tabNavigationPage1_DoubleClick);
             this.tabNavigationPage1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tabNavigationPage1_MouseClick);
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.oIDDataGridViewTextBoxColumn,
-            this.koduDataGridViewTextBoxColumn,
-            this.adiDataGridViewTextBoxColumn,
-            this.kullanımDurumuDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.stokKartsBindingSource;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(898, 222);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // oIDDataGridViewTextBoxColumn
-            // 
-            this.oIDDataGridViewTextBoxColumn.DataPropertyName = "OID";
-            this.oIDDataGridViewTextBoxColumn.HeaderText = "OID";
-            this.oIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.oIDDataGridViewTextBoxColumn.Name = "oIDDataGridViewTextBoxColumn";
-            this.oIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.oIDDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // koduDataGridViewTextBoxColumn
-            // 
-            this.koduDataGridViewTextBoxColumn.DataPropertyName = "Kodu";
-            this.koduDataGridViewTextBoxColumn.HeaderText = "Kodu";
-            this.koduDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.koduDataGridViewTextBoxColumn.Name = "koduDataGridViewTextBoxColumn";
-            this.koduDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // adiDataGridViewTextBoxColumn
-            // 
-            this.adiDataGridViewTextBoxColumn.DataPropertyName = "Adi";
-            this.adiDataGridViewTextBoxColumn.HeaderText = "Adi";
-            this.adiDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.adiDataGridViewTextBoxColumn.Name = "adiDataGridViewTextBoxColumn";
-            this.adiDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // kullanımDurumuDataGridViewTextBoxColumn
-            // 
-            this.kullanımDurumuDataGridViewTextBoxColumn.DataPropertyName = "KullanımDurumu";
-            this.kullanımDurumuDataGridViewTextBoxColumn.HeaderText = "KullanımDurumu";
-            this.kullanımDurumuDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.kullanımDurumuDataGridViewTextBoxColumn.Name = "kullanımDurumuDataGridViewTextBoxColumn";
-            this.kullanımDurumuDataGridViewTextBoxColumn.Width = 125;
             // 
             // stokKartsBindingSource
             // 
@@ -292,53 +210,10 @@ namespace StokTakipProjesi
             // tabNavigationPage2
             // 
             this.tabNavigationPage2.Caption = "tabNavigationPage2";
-            this.tabNavigationPage2.Controls.Add(this.dataGridView2);
             this.tabNavigationPage2.Name = "tabNavigationPage2";
             this.tabNavigationPage2.PageText = "Birim";
             this.tabNavigationPage2.Size = new System.Drawing.Size(898, 222);
             this.tabNavigationPage2.Click += new System.EventHandler(this.tabNavigationPage2_Click);
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AutoGenerateColumns = false;
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.oIDDataGridViewTextBoxColumn1,
-            this.koduDataGridViewTextBoxColumn1,
-            this.adiDataGridViewTextBoxColumn1});
-            this.dataGridView2.DataSource = this.birimsBindingSource;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(892, 216);
-            this.dataGridView2.TabIndex = 0;
-            // 
-            // oIDDataGridViewTextBoxColumn1
-            // 
-            this.oIDDataGridViewTextBoxColumn1.DataPropertyName = "OID";
-            this.oIDDataGridViewTextBoxColumn1.HeaderText = "OID";
-            this.oIDDataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.oIDDataGridViewTextBoxColumn1.Name = "oIDDataGridViewTextBoxColumn1";
-            this.oIDDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.oIDDataGridViewTextBoxColumn1.Width = 125;
-            // 
-            // koduDataGridViewTextBoxColumn1
-            // 
-            this.koduDataGridViewTextBoxColumn1.DataPropertyName = "Kodu";
-            this.koduDataGridViewTextBoxColumn1.HeaderText = "Kodu";
-            this.koduDataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.koduDataGridViewTextBoxColumn1.Name = "koduDataGridViewTextBoxColumn1";
-            this.koduDataGridViewTextBoxColumn1.Width = 125;
-            // 
-            // adiDataGridViewTextBoxColumn1
-            // 
-            this.adiDataGridViewTextBoxColumn1.DataPropertyName = "Adi";
-            this.adiDataGridViewTextBoxColumn1.HeaderText = "Adi";
-            this.adiDataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.adiDataGridViewTextBoxColumn1.Name = "adiDataGridViewTextBoxColumn1";
-            this.adiDataGridViewTextBoxColumn1.Width = 125;
             // 
             // birimsBindingSource
             // 
@@ -353,72 +228,10 @@ namespace StokTakipProjesi
             // tabNavigationPage3
             // 
             this.tabNavigationPage3.Caption = "tabNavigationPage3";
-            this.tabNavigationPage3.Controls.Add(this.dataGridView3);
             this.tabNavigationPage3.Name = "tabNavigationPage3";
             this.tabNavigationPage3.PageText = "Stok Tedarikçisi";
             this.tabNavigationPage3.Size = new System.Drawing.Size(898, 222);
             this.tabNavigationPage3.Click += new System.EventHandler(this.tabNavigationPage3_Click);
-            // 
-            // dataGridView3
-            // 
-            this.dataGridView3.AutoGenerateColumns = false;
-            this.dataGridView3.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.oIDDataGridViewTextBoxColumn2,
-            this.koduDataGridViewTextBoxColumn2,
-            this.adiDataGridViewTextBoxColumn2,
-            this.emailDataGridViewTextBoxColumn,
-            this.telefonDataGridViewTextBoxColumn});
-            this.dataGridView3.DataSource = this.stokTedarikcisiBindingSource;
-            this.dataGridView3.GridColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.dataGridView3.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowHeadersWidth = 51;
-            this.dataGridView3.RowTemplate.Height = 24;
-            this.dataGridView3.Size = new System.Drawing.Size(892, 219);
-            this.dataGridView3.TabIndex = 0;
-            // 
-            // oIDDataGridViewTextBoxColumn2
-            // 
-            this.oIDDataGridViewTextBoxColumn2.DataPropertyName = "OID";
-            this.oIDDataGridViewTextBoxColumn2.HeaderText = "OID";
-            this.oIDDataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.oIDDataGridViewTextBoxColumn2.Name = "oIDDataGridViewTextBoxColumn2";
-            this.oIDDataGridViewTextBoxColumn2.ReadOnly = true;
-            this.oIDDataGridViewTextBoxColumn2.Width = 125;
-            // 
-            // koduDataGridViewTextBoxColumn2
-            // 
-            this.koduDataGridViewTextBoxColumn2.DataPropertyName = "Kodu";
-            this.koduDataGridViewTextBoxColumn2.HeaderText = "Kodu";
-            this.koduDataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.koduDataGridViewTextBoxColumn2.Name = "koduDataGridViewTextBoxColumn2";
-            this.koduDataGridViewTextBoxColumn2.Width = 125;
-            // 
-            // adiDataGridViewTextBoxColumn2
-            // 
-            this.adiDataGridViewTextBoxColumn2.DataPropertyName = "Adi";
-            this.adiDataGridViewTextBoxColumn2.HeaderText = "Adi";
-            this.adiDataGridViewTextBoxColumn2.MinimumWidth = 6;
-            this.adiDataGridViewTextBoxColumn2.Name = "adiDataGridViewTextBoxColumn2";
-            this.adiDataGridViewTextBoxColumn2.Width = 125;
-            // 
-            // emailDataGridViewTextBoxColumn
-            // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
-            this.emailDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            this.emailDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // telefonDataGridViewTextBoxColumn
-            // 
-            this.telefonDataGridViewTextBoxColumn.DataPropertyName = "Telefon";
-            this.telefonDataGridViewTextBoxColumn.HeaderText = "Telefon";
-            this.telefonDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.telefonDataGridViewTextBoxColumn.Name = "telefonDataGridViewTextBoxColumn";
-            this.telefonDataGridViewTextBoxColumn.Width = 125;
             // 
             // stokTedarikcisiBindingSource
             // 
@@ -433,71 +246,10 @@ namespace StokTakipProjesi
             // tabNavigationPage4
             // 
             this.tabNavigationPage4.Caption = "tabNavigationPage4";
-            this.tabNavigationPage4.Controls.Add(this.dataGridView4);
             this.tabNavigationPage4.Name = "tabNavigationPage4";
             this.tabNavigationPage4.PageText = "Stok Hareket";
             this.tabNavigationPage4.Size = new System.Drawing.Size(898, 222);
             this.tabNavigationPage4.Click += new System.EventHandler(this.tabNavigationPage4_Click);
-            // 
-            // dataGridView4
-            // 
-            this.dataGridView4.AutoGenerateColumns = false;
-            this.dataGridView4.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.oIDDataGridViewTextBoxColumn3,
-            this.ıslemTarihiDataGridViewTextBoxColumn,
-            this.ıslemTuruDataGridViewTextBoxColumn,
-            this.miktarDataGridViewTextBoxColumn,
-            this.aciklamaDataGridViewTextBoxColumn});
-            this.dataGridView4.DataSource = this.stokHareketsBindingSource;
-            this.dataGridView4.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.RowHeadersWidth = 51;
-            this.dataGridView4.RowTemplate.Height = 24;
-            this.dataGridView4.Size = new System.Drawing.Size(892, 216);
-            this.dataGridView4.TabIndex = 0;
-            // 
-            // oIDDataGridViewTextBoxColumn3
-            // 
-            this.oIDDataGridViewTextBoxColumn3.DataPropertyName = "OID";
-            this.oIDDataGridViewTextBoxColumn3.HeaderText = "OID";
-            this.oIDDataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.oIDDataGridViewTextBoxColumn3.Name = "oIDDataGridViewTextBoxColumn3";
-            this.oIDDataGridViewTextBoxColumn3.ReadOnly = true;
-            this.oIDDataGridViewTextBoxColumn3.Width = 125;
-            // 
-            // ıslemTarihiDataGridViewTextBoxColumn
-            // 
-            this.ıslemTarihiDataGridViewTextBoxColumn.DataPropertyName = "IslemTarihi";
-            this.ıslemTarihiDataGridViewTextBoxColumn.HeaderText = "IslemTarihi";
-            this.ıslemTarihiDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.ıslemTarihiDataGridViewTextBoxColumn.Name = "ıslemTarihiDataGridViewTextBoxColumn";
-            this.ıslemTarihiDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // ıslemTuruDataGridViewTextBoxColumn
-            // 
-            this.ıslemTuruDataGridViewTextBoxColumn.DataPropertyName = "IslemTuru";
-            this.ıslemTuruDataGridViewTextBoxColumn.HeaderText = "IslemTuru";
-            this.ıslemTuruDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.ıslemTuruDataGridViewTextBoxColumn.Name = "ıslemTuruDataGridViewTextBoxColumn";
-            this.ıslemTuruDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // miktarDataGridViewTextBoxColumn
-            // 
-            this.miktarDataGridViewTextBoxColumn.DataPropertyName = "Miktar";
-            this.miktarDataGridViewTextBoxColumn.HeaderText = "Miktar";
-            this.miktarDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.miktarDataGridViewTextBoxColumn.Name = "miktarDataGridViewTextBoxColumn";
-            this.miktarDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // aciklamaDataGridViewTextBoxColumn
-            // 
-            this.aciklamaDataGridViewTextBoxColumn.DataPropertyName = "Aciklama";
-            this.aciklamaDataGridViewTextBoxColumn.HeaderText = "Aciklama";
-            this.aciklamaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.aciklamaDataGridViewTextBoxColumn.Name = "aciklamaDataGridViewTextBoxColumn";
-            this.aciklamaDataGridViewTextBoxColumn.Width = 125;
             // 
             // stokHareketsBindingSource
             // 
@@ -859,6 +611,7 @@ namespace StokTakipProjesi
             this.simpleButton4.Size = new System.Drawing.Size(124, 44);
             this.simpleButton4.TabIndex = 15;
             this.simpleButton4.Text = "Kaydet";
+            this.simpleButton4.Click += new System.EventHandler(this.simpleButton4_Click);
             // 
             // textEdit7
             // 
@@ -933,20 +686,12 @@ namespace StokTakipProjesi
             this.Load += new System.EventHandler(this.Anasayfa_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tabPane1)).EndInit();
             this.tabPane1.ResumeLayout(false);
-            this.tabNavigationPage1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stokKartsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stokProjesiDataSet)).EndInit();
-            this.tabNavigationPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.birimsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stokProjesiDataSet1)).EndInit();
-            this.tabNavigationPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stokTedarikcisiBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stokProjesiDataSet2)).EndInit();
-            this.tabNavigationPage4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stokHareketsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stokProjesiDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
@@ -993,31 +738,15 @@ namespace StokTakipProjesi
         private StokProjesiDataSet stokProjesiDataSet;
         private System.Windows.Forms.BindingSource stokKartsBindingSource;
         private StokProjesiDataSetTableAdapters.stokKartsTableAdapter stokKartsTableAdapter;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridView dataGridView3;
-        private System.Windows.Forms.DataGridView dataGridView4;
         private StokProjesiDataSet1 stokProjesiDataSet1;
         private System.Windows.Forms.BindingSource birimsBindingSource;
         private StokProjesiDataSet1TableAdapters.BirimsTableAdapter birimsTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn oIDDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn koduDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn adiDataGridViewTextBoxColumn1;
         private StokProjesiDataSet2 stokProjesiDataSet2;
         private System.Windows.Forms.BindingSource stokTedarikcisiBindingSource;
         private StokProjesiDataSet2TableAdapters.StokTedarikcisiTableAdapter stokTedarikcisiTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn oIDDataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn koduDataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn adiDataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn telefonDataGridViewTextBoxColumn;
         private StokProjesiDataSet3 stokProjesiDataSet3;
         private System.Windows.Forms.BindingSource stokHareketsBindingSource;
         private StokProjesiDataSet3TableAdapters.stokHareketsTableAdapter stokHareketsTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn oIDDataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ıslemTarihiDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ıslemTuruDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn miktarDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn aciklamaDataGridViewTextBoxColumn;
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.GroupControl groupControl2;
         private DevExpress.XtraEditors.GroupControl groupControl3;
@@ -1046,11 +775,6 @@ namespace StokTakipProjesi
         private DevExpress.XtraEditors.LabelControl labelControl11;
         private DevExpress.XtraEditors.TextEdit textEdit9;
         private DevExpress.XtraEditors.LabelControl labelControl8;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn oIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn koduDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn adiDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn kullanımDurumuDataGridViewTextBoxColumn;
         private System.Windows.Forms.RadioButton radioButton4;
         private System.Windows.Forms.RadioButton radioButton3;
         private DevExpress.XtraEditors.TextEdit textEdit11;

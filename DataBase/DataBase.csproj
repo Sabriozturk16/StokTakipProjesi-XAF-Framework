@@ -181,9 +181,9 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Contexs\Contex.cs" />
-    <Compile Include="Migrations\20230506110942_start.cs" />
-    <Compile Include="Migrations\20230506110942_start.designer.cs">
-      <DependentUpon>20230506110942_start.cs</DependentUpon>
+    <Compile Include="Migrations\20230507214138_ilk.cs" />
+    <Compile Include="Migrations\20230507214138_ilk.designer.cs">
+      <DependentUpon>20230507214138_ilk.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\ContexModelSnapshot.cs" />
     <Compile Include="ModelsEN\Login1.cs" />

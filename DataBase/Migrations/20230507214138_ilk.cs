@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace DataBase.Migrations
 {
-    public partial class start : Migration
+    public partial class ilk : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -39,7 +39,7 @@ namespace DataBase.Migrations
                 name: "stokKarts",
                 columns: table => new
                 {
-                    OID = table.Column<int>(nullable: false)
+                    StokKartId = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Kodu = table.Column<string>(nullable: true),
                     Adi = table.Column<string>(nullable: true),
@@ -49,7 +49,7 @@ namespace DataBase.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_stokKarts", x => x.OID);
+                    table.PrimaryKey("PK_stokKarts", x => x.StokKartId);
                     table.ForeignKey(
                         name: "FK_stokKarts_Birims_BirimOID",
                         column: x => x.BirimOID,
@@ -67,8 +67,8 @@ namespace DataBase.Migrations
                     IslemTarihi = table.Column<DateTime>(nullable: false),
                     IslemTuru = table.Column<int>(nullable: false),
                     Miktar = table.Column<double>(nullable: false),
-                    Aciklama = table.Column<string>(nullable: true),
-                    StokKartId = table.Column<int>(nullable: true)
+                    Aciklama = table.Column<string>(nullable: false),
+                    StokKartId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -77,31 +77,31 @@ namespace DataBase.Migrations
                         name: "FK_stokHarekets_stokKarts_StokKartId",
                         column: x => x.StokKartId,
                         principalTable: "stokKarts",
-                        principalColumn: "OID",
-                        onDelete: ReferentialAction.Restrict);
+                        principalColumn: "StokKartId",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
                 name: "StokTedarikcisi",
                 columns: table => new
                 {
-                    OID = table.Column<int>(nullable: false)
+                    StokKartId = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Kodu = table.Column<string>(nullable: true),
                     Adi = table.Column<string>(nullable: true),
                     Email = table.Column<string>(nullable: true),
                     Telefon = table.Column<string>(nullable: true),
-                    StokKartId = table.Column<int>(nullable: true)
+                    StokKartId1 = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_StokTedarikcisi", x => x.OID);
+                    table.PrimaryKey("PK_StokTedarikcisi", x => x.StokKartId);
                     table.ForeignKey(
-                        name: "FK_StokTedarikcisi_stokKarts_StokKartId",
-                        column: x => x.StokKartId,
+                        name: "FK_StokTedarikcisi_stokKarts_StokKartId1",
+                        column: x => x.StokKartId1,
                         principalTable: "stokKarts",
-                        principalColumn: "OID",
-                        onDelete: ReferentialAction.Restrict);
+                        principalColumn: "StokKartId",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
@@ -115,9 +115,9 @@ namespace DataBase.Migrations
                 column: "BirimOID");
 
             migrationBuilder.CreateIndex(
-                name: "IX_StokTedarikcisi_StokKartId",
+                name: "IX_StokTedarikcisi_StokKartId1",
                 table: "StokTedarikcisi",
-                column: "StokKartId");
+                column: "StokKartId1");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

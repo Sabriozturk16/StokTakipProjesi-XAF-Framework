@@ -129,5 +129,10 @@ namespace StokTakipProjesi
         {
             Stok_Kart();
         }
+
+        private void simpleButton4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
