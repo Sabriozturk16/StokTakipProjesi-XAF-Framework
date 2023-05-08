@@ -11,7 +11,7 @@ namespace DataBase.Models
     {
         private Birim birim;
         [Key]
-        public int? StokKartId { get; set; }
+        public int OID { get; set; }
         public string Kodu { get; set; }
         public string Adi { get; set; }
         public Birim Birim { get => birim; set => birim = value; }
@@ -19,6 +19,7 @@ namespace DataBase.Models
         public virtual ICollection<StokTedarikcisi> Tedarikçiler { get; set; }
         public virtual ICollection<StokHareket> StokHarekets { get; set; }
         public double Miktar { get; set; }
+        
 
     }
 

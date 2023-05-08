@@ -16,7 +16,7 @@ namespace Class
        
         public string Yazi(string name)
         {
-            StokTakipProjesi.XtraForm1 dene = new XtraForm1();
+            StokTakipProjesi.Login dene = new Login();
             name = "selin";
             return name;
         }

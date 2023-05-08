@@ -38,15 +38,15 @@ namespace StokTakipProjesi
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tabPane1 = new DevExpress.XtraBars.Navigation.TabPane();
             this.tabNavigationPage1 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            this.tabNavigationPage2 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            this.tabNavigationPage3 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
+            this.tabNavigationPage4 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.stokKartsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.stokProjesiDataSet = new StokTakipProjesi.StokProjesiDataSet();
-            this.tabNavigationPage2 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.birimsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.stokProjesiDataSet1 = new StokTakipProjesi.StokProjesiDataSet1();
-            this.tabNavigationPage3 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.stokTedarikcisiBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.stokProjesiDataSet2 = new StokTakipProjesi.StokProjesiDataSet2();
-            this.tabNavigationPage4 = new DevExpress.XtraBars.Navigation.TabNavigationPage();
             this.stokHareketsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.stokProjesiDataSet3 = new StokTakipProjesi.StokProjesiDataSet3();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
@@ -197,6 +197,30 @@ namespace StokTakipProjesi
             this.tabNavigationPage1.DoubleClick += new System.EventHandler(this.tabNavigationPage1_DoubleClick);
             this.tabNavigationPage1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tabNavigationPage1_MouseClick);
             // 
+            // tabNavigationPage2
+            // 
+            this.tabNavigationPage2.Caption = "tabNavigationPage2";
+            this.tabNavigationPage2.Name = "tabNavigationPage2";
+            this.tabNavigationPage2.PageText = "Birim";
+            this.tabNavigationPage2.Size = new System.Drawing.Size(898, 222);
+            this.tabNavigationPage2.Click += new System.EventHandler(this.tabNavigationPage2_Click);
+            // 
+            // tabNavigationPage3
+            // 
+            this.tabNavigationPage3.Caption = "tabNavigationPage3";
+            this.tabNavigationPage3.Name = "tabNavigationPage3";
+            this.tabNavigationPage3.PageText = "Stok Tedarikçisi";
+            this.tabNavigationPage3.Size = new System.Drawing.Size(898, 222);
+            this.tabNavigationPage3.Click += new System.EventHandler(this.tabNavigationPage3_Click);
+            // 
+            // tabNavigationPage4
+            // 
+            this.tabNavigationPage4.Caption = "tabNavigationPage4";
+            this.tabNavigationPage4.Name = "tabNavigationPage4";
+            this.tabNavigationPage4.PageText = "Stok Hareket";
+            this.tabNavigationPage4.Size = new System.Drawing.Size(898, 222);
+            this.tabNavigationPage4.Click += new System.EventHandler(this.tabNavigationPage4_Click);
+            // 
             // stokKartsBindingSource
             // 
             this.stokKartsBindingSource.DataMember = "stokKarts";
@@ -206,14 +230,6 @@ namespace StokTakipProjesi
             // 
             this.stokProjesiDataSet.DataSetName = "StokProjesiDataSet";
             this.stokProjesiDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tabNavigationPage2
-            // 
-            this.tabNavigationPage2.Caption = "tabNavigationPage2";
-            this.tabNavigationPage2.Name = "tabNavigationPage2";
-            this.tabNavigationPage2.PageText = "Birim";
-            this.tabNavigationPage2.Size = new System.Drawing.Size(898, 222);
-            this.tabNavigationPage2.Click += new System.EventHandler(this.tabNavigationPage2_Click);
             // 
             // birimsBindingSource
             // 
@@ -225,14 +241,6 @@ namespace StokTakipProjesi
             this.stokProjesiDataSet1.DataSetName = "StokProjesiDataSet1";
             this.stokProjesiDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // tabNavigationPage3
-            // 
-            this.tabNavigationPage3.Caption = "tabNavigationPage3";
-            this.tabNavigationPage3.Name = "tabNavigationPage3";
-            this.tabNavigationPage3.PageText = "Stok Tedarikçisi";
-            this.tabNavigationPage3.Size = new System.Drawing.Size(898, 222);
-            this.tabNavigationPage3.Click += new System.EventHandler(this.tabNavigationPage3_Click);
-            // 
             // stokTedarikcisiBindingSource
             // 
             this.stokTedarikcisiBindingSource.DataMember = "StokTedarikcisi";
@@ -242,14 +250,6 @@ namespace StokTakipProjesi
             // 
             this.stokProjesiDataSet2.DataSetName = "StokProjesiDataSet2";
             this.stokProjesiDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tabNavigationPage4
-            // 
-            this.tabNavigationPage4.Caption = "tabNavigationPage4";
-            this.tabNavigationPage4.Name = "tabNavigationPage4";
-            this.tabNavigationPage4.PageText = "Stok Hareket";
-            this.tabNavigationPage4.Size = new System.Drawing.Size(898, 222);
-            this.tabNavigationPage4.Click += new System.EventHandler(this.tabNavigationPage4_Click);
             // 
             // stokHareketsBindingSource
             // 
@@ -403,6 +403,7 @@ namespace StokTakipProjesi
             this.simpleButton2.Size = new System.Drawing.Size(124, 44);
             this.simpleButton2.TabIndex = 16;
             this.simpleButton2.Text = "Kaydet";
+            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // textEdit3
             // 
@@ -467,6 +468,7 @@ namespace StokTakipProjesi
             this.simpleButton3.Size = new System.Drawing.Size(124, 44);
             this.simpleButton3.TabIndex = 20;
             this.simpleButton3.Text = "Kaydet";
+            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
             // 
             // textEdit10
             // 

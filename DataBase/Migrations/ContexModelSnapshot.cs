@@ -75,20 +75,19 @@ namespace DataBase.Migrations
                     b.Property<double>("Miktar")
                         .HasColumnType("float");
 
-                    b.Property<int?>("StokKartId")
-                        .IsRequired()
+                    b.Property<int>("StokKartOID")
                         .HasColumnType("int");
 
                     b.HasKey("OID");
 
-                    b.HasIndex("StokKartId");
+                    b.HasIndex("StokKartOID");
 
                     b.ToTable("stokHarekets");
                 });
 
             modelBuilder.Entity("DataBase.Models.StokKart", b =>
                 {
-                    b.Property<int?>("StokKartId")
+                    b.Property<int>("OID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -108,7 +107,7 @@ namespace DataBase.Migrations
                     b.Property<double>("Miktar")
                         .HasColumnType("float");
 
-                    b.HasKey("StokKartId");
+                    b.HasKey("OID");
 
                     b.HasIndex("BirimOID");
 
@@ -117,7 +116,7 @@ namespace DataBase.Migrations
 
             modelBuilder.Entity("DataBase.Models.StokTedarikcisi", b =>
                 {
-                    b.Property<int?>("StokKartId")
+                    b.Property<int>("OID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -131,24 +130,24 @@ namespace DataBase.Migrations
                     b.Property<string>("Kodu")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("StokKartId1")
+                    b.Property<int?>("StokKartOID")
                         .HasColumnType("int");
 
                     b.Property<string>("Telefon")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("StokKartId");
+                    b.HasKey("OID");
 
-                    b.HasIndex("StokKartId1");
+                    b.HasIndex("StokKartOID");
 
                     b.ToTable("StokTedarikcisi");
                 });
 
             modelBuilder.Entity("DataBase.Models.StokHareket", b =>
                 {
-                    b.HasOne("DataBase.Models.StokKart", null)
+                    b.HasOne("DataBase.Models.StokKart", "StokKart")
                         .WithMany("StokHarekets")
-                        .HasForeignKey("StokKartId")
+                        .HasForeignKey("StokKartOID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
@@ -164,9 +163,7 @@ namespace DataBase.Migrations
                 {
                     b.HasOne("DataBase.Models.StokKart", "StokKart")
                         .WithMany("Tedarikçiler")
-                        .HasForeignKey("StokKartId1")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("StokKartOID");
                 });
 #pragma warning restore 612, 618
         }

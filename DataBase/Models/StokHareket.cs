@@ -25,7 +25,7 @@ namespace DataBase.Models
         public string Aciklama { get; set; }
         [Required]
 
-        public int? StokKartId { get; set; }
+        public virtual StokKart StokKart { get; set; }
     }
 
     public enum IslemTuru

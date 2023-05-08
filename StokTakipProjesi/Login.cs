@@ -13,11 +13,11 @@ using System.Data.SqlClient;
 
 namespace StokTakipProjesi
 {
-    public partial class XtraForm1 : DevExpress.XtraEditors.XtraForm
+    public partial class Login : DevExpress.XtraEditors.XtraForm
     {
         
 
-        public XtraForm1()
+        public Login()
         {
             InitializeComponent();
         }

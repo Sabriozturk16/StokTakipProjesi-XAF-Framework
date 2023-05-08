@@ -1,7 +1,7 @@
 ﻿
 namespace StokTakipProjesi
 {
-    partial class XtraForm1
+    partial class Login
     {
         /// <summary>
         /// Required designer variable.

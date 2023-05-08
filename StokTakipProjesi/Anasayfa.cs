@@ -42,6 +42,72 @@ namespace StokTakipProjesi
                 labelControl17.Text = "'Stok Kodu' ve Stok Adı Boş Bırakılamaz";
             }
         }
+        public void Birim()
+        {
+            if (textEdit1.Text != "" && textEdit2.Text != "")
+            {
+                baglanti.Open();
+                string kayit = "insert into  (kullaniciad,firmaad,yetkili,il,ilce,vergidaire,vergino,mutabakatmail,telefon,adres,borc) values (@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9,@p10,@p11)";
+                SqlCommand ekle = new SqlCommand(kayit, baglanti);
+                ekle.Parameters.AddWithValue("@p1", textEdit1.Text);
+                ekle.Parameters.AddWithValue("@p2", textEdit2.Text);
+                ekle.ExecuteNonQuery();
+                baglanti.Close();
+                labelControl17.Visible = true;
+                labelControl17.ForeColor = Color.Green;
+                labelControl17.Text = "Stok Kart Başarıyla Kaydedildi";
+            }
+            else
+            {
+                labelControl17.Visible = true;
+                labelControl17.ForeColor = Color.Red;
+                labelControl17.Text = "'Birim Kodu' ve Birim Adı Boş Bırakılamaz";
+            }
+        }
+        public void Stok_Tedarik()
+        {
+            if (textEdit1.Text != "" && textEdit2.Text != "")
+            {
+                baglanti.Open();
+                string kayit = "insert into  (kullaniciad,firmaad,yetkili,il,ilce,vergidaire,vergino,mutabakatmail,telefon,adres,borc) values (@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9,@p10,@p11)";
+                SqlCommand ekle = new SqlCommand(kayit, baglanti);
+                ekle.Parameters.AddWithValue("@p1", textEdit1.Text);
+                ekle.Parameters.AddWithValue("@p2", textEdit2.Text);
+                ekle.ExecuteNonQuery();
+                baglanti.Close();
+                labelControl17.Visible = true;
+                labelControl17.ForeColor = Color.Green;
+                labelControl17.Text = "Stok Kart Başarıyla Kaydedildi";
+            }
+            else
+            {
+                labelControl17.Visible = true;
+                labelControl17.ForeColor = Color.Red;
+                labelControl17.Text = "'Kodu','Adı','E-Mail'veya Telefon Boş Bırakılamaz";
+            }
+        }
+        public void Stok_Hareket()
+        {
+            if (textEdit1.Text != "" && textEdit2.Text != "")
+            {
+                baglanti.Open();
+                string kayit = "insert into  (kullaniciad,firmaad,yetkili,il,ilce,vergidaire,vergino,mutabakatmail,telefon,adres,borc) values (@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9,@p10,@p11)";
+                SqlCommand ekle = new SqlCommand(kayit, baglanti);
+                ekle.Parameters.AddWithValue("@p1", textEdit1.Text);
+                ekle.Parameters.AddWithValue("@p2", textEdit2.Text);
+                ekle.ExecuteNonQuery();
+                baglanti.Close();
+                labelControl17.Visible = true;
+                labelControl17.ForeColor = Color.Green;
+                labelControl17.Text = "Stok Kart Başarıyla Kaydedildi";
+            }
+            else
+            {
+                labelControl17.Visible = true;
+                labelControl17.ForeColor = Color.Red;
+                labelControl17.Text = "'İşlem Türü',Miktar veya Açıklama Boş Bırakılamaz";
+            }
+        }
         private void Anasayfa_Load(object sender, EventArgs e)
         {
             // TODO: Bu kod satırı 'stokProjesiDataSet3.stokHarekets' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
@@ -77,7 +143,7 @@ namespace StokTakipProjesi
 
         private void pictureEdit1_Click(object sender, EventArgs e)
         {
-            XtraForm1 xtraForm1 = new XtraForm1();
+            Login xtraForm1 = new Login();
             this.Close();
             xtraForm1.Show();
         }
@@ -132,7 +198,17 @@ namespace StokTakipProjesi
 
         private void simpleButton4_Click(object sender, EventArgs e)
         {
+            Stok_Hareket();
+        }
 
+        private void simpleButton2_Click(object sender, EventArgs e)
+        {
+            Birim();
+        }
+
+        private void simpleButton3_Click(object sender, EventArgs e)
+        {
+            Stok_Tedarik();
         }
     }
 }
